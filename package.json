@@ -1,11 +1,14 @@
 {
   "name": "chatting",
+  "homepage": "http://pragmaticreviews.githum.io/chatting",
   "version": "1.0.0",
   "description": "real time chat app",
   "main": "server.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "node server",
-    "dev":"nodemon server"
+    "dev": "nodemon server"
   },
   "author": "sandhya prajapati",
   "license": "ISC",
@@ -15,6 +18,7 @@
     "socket.io": "^4.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.7"
   }
 }
